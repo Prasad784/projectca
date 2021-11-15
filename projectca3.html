@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TASK MATE</title>
+</head>
+<body>
+  <style type="text/css">
+    html{
+      background-color: light blue;
+  background-image: -webkit-linear-gradient(65deg, #00FFF0 100%, lightblue 10%);
+  min-height: 1000px;
+  font-family: "helvetica neue";
+}
+h1{
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: purple;
+  padding: 40px;
+}
+
+.box {
+  max-width: 500px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+#heading {
+  background-color: #E7A1A1;
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:submit {
+  text-decoration: line-through;
+  text-decoration-color: #E7A1A1;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: darkgreen;
+}
+
+form.item {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  min-height: 500px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #E7A1A1;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #E7A1A1;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+  </style>
+<div class="box" id="heading">
+  <h1><center>SURVEY</center></h1>
+</div>
+
+<div class="box">
+
+  <form>
+    <input type="text" value="Name" onFocus="this.select();"/>
+    <input type="text" value="E-mail" onFocus="this.select();"/>
+  </br>
+    <p>Please select your language:</p>
+      <input type="radio" id="ENGLISH" name="fav_language" value="ENGLISH">
+      <label for="ENGLISH">ENGLISH</label><br>
+      <input type="radio" id="HINDI" name="fav_language" value="HINDI">
+      <label for="HINDI">HINDI</label><br>
+      <input type="radio" id="TELUGU" name="fav_language" value="TELUGU">
+      <label for="TELUGU">TELUGU</label><br>
+      <br>
+      <p>Please select your age:</p>
+  <input type="radio" id="age1" name="age" value="18">
+  <label for="age1">0 - 18</label><br>
+  <input type="radio" id="age2" name="age" value="40">
+  <label for="age2">18 - 40</label><br>  
+  <input type="radio" id="age3" name="age" value="60">
+  <label for="age3">40 - 60</label><br>
+
+  <p>Daily Habit </p>
+  <input type="radio" id="Reading books" name="Daily Habit" value="Reading books">
+  <label for="Habit">Reading books</label><br>
+
+
+  <input type="radio" id="PLAYING CRICKET" name="Daily Habit" value="PLAYING CRICKET">
+  <label for="Habit">PLAYING CRICKET</label><br>
+
+
+  <input type="radio" id="Trading" name="Daily Habit" value="Trading">
+  <label for="Habit">Trading</label><br>
+
+
+  <input type="radio" id="NA" name="Daily Habit" value="NA">
+  <label for="Habit">NA</label><br>
+
+  <center><input type="submit" value="Submit"></center>
+  <center><input type="Reset" value="Reset"></center>
+
+  </form>
+    </div>
+  </form>
+</body>
+</html>
